@@ -1,0 +1,219 @@
+/*==============================================================
+
+[Print Stylesheet]
+
+Project:    CSUN CATALOG
+Version:    1.3
+Last change:    05/09/14
+Primary use:    WEB CATALOG
+
+[Table of contents]
+
+1. PRINT @MEDIA / PAGE PRINT SETUP
+
+2. HYPERLINKS / ELIMINATES URL
+
+3. HTML BOILERPLATE
+
+4. DISPLAY NONE / HIDES ALL UNNECESSARY CONTENT
+
+5. SECTIONS STYLIZED / FORMATS FONT SIZE, ADJUSTS SPACING, ELIMINATES BORDERS
+
+===============================================================*/
+
+
+/* ==========================================================================
+    1. PRINT @MEDIA / PAGE PRINT SETUP
+   ========================================================================== */
+
+
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    @page {
+    margin: 30cm;
+    }
+
+    html {
+    overflow:hidden;
+    }
+
+    ::-webkit-scrollbar{
+    	display: none;
+    }
+
+/* ==========================================================================
+    2. HYPERLINKS / ELIMINATES URL
+   ========================================================================== */
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: none;
+      }
+
+/* ===========================================================================
+    3. HTML BOILERPLATE
+   =========================================================================== */
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+
+	ul, ol {
+		padding: 2px 1px 1px 10px;
+		list-style-position: inside;
+		font-size: 10px;
+	}
+
+	ul li, ol li {list-style-position: inside;}
+
+/* ===========================================================================
+    4. DISPLAY NONE / HIDES ALL UNNECESSARY CONTENT
+   =========================================================================== */
+
+
+	#fixbar, #full-banner-inner, #catalog-subnav, #share-icons, #landing-section,
+	#breadcrumbs, #outside-footer, .linksrow, #lastrow, /*div a, .well-tseng,*/
+	.dept-title-small, #policy-tags{
+	display: none;
+	}
+
+/* ===============================================================================
+    5. SECTIONS STYLIZED / FORMATS FONT SIZE, ADJUSTS SPACING, ELIMINATES BORDERS
+   =============================================================================== */
+
+	* {
+	padding: 0 0 0 0;
+	}
+
+	body p{
+	color: #000000;
+	font-size: 10px;
+	line-height: 14px;
+	word-wrap:break-word;
+	}
+
+	.container {
+	width: 100%;
+	margin: 0;
+	float: none;
+	}
+
+	body h1, h2, h3, h4, h5, h6{
+	font-size: 14px;
+	line-height: 30px;
+	font-weight: 600;
+	padding: 0px 0px 0px 0px;
+	margin: 5px 0px 5px 0px;
+	}
+
+	p, #full-banner-inner, .prog-title, .section-content, .section-title, .pad-box, .inner-item, {
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	border-bottom: none !important;
+	}
+
+  .well-tseng {
+  color: #000000;
+	font-size: 10px;
+	line-height: 14px;
+  border: none !important;
+  box-shadow: none !important;
+	margin: 0px 0px 0px 0px;
+	word-wrap:break-word;
+  }
+
+	span h2 {
+	border-bottom: none !important;
+	}
+
+	#full-banner {
+	border-bottom: none;
+	padding: 0px 0px 0px 0px;
+	min-height: 40px;
+	}
+
+	#main-section {
+	border-top: none;
+	}
+
+	#inset-content {
+	}
+
+	.section-title{
+		display:initial;
+		margin-top:500px;
+		padding-top: 500px;
+	}
+
+	.section-title span {
+	border-bottom: none;
+	}
+
+	#inset-content {
+	padding-top:5px;
+	border: none;
+	}
+
+	.row {
+		margin-right: -5px;
+		margin-left: -5px;
+	}
+
+	#main-section {
+	padding-top: 0px;
+	}
+
+}
