@@ -239,7 +239,7 @@ get_header(); ?>
 
 
 		$.ajax({
-			url: "https://curriculum.metalab.csun.edu/api/terms/"+semester+"/classes/"+course,
+			url: "https://api.metalab.csun.edu/curriculum/api/terms/"+semester+"/classes/"+course,
 			type: 'get',
 			cache: 'false',
 			dataType: 'json',
