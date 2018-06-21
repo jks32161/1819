@@ -173,7 +173,7 @@ get_header(); ?>
 							if ( $values != false ) : ?>
 								<div class="section-content">
 									<span class="section-title"><span><h2>More information</h2></span></span>
-									<p>If you would like more information about this program, please contact
+									<p>For more information about this program, please contact
 										<a href="mailto:<?php the_field('email_contact'); ?>" title="Email questions about the program"><?php the_field('email_contact'); ?></a>.
 									</p>
 								</div>
