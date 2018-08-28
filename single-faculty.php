@@ -103,7 +103,7 @@ get_header(); ?>
 				
 					<div class="section-content">
  							<?php if(!empty($email)): ?>
-									<p>Contact information for <?php echo $new_faculty_name ?> can be found using the <a href="<?php echo ('http://www.csun.edu/faculty/profiles/'.$ind_email); ?>" target="_blank">Faculty Application</a>.</p>
+									<p>Contact information for <?php echo $new_faculty_name ?> can be found using the <a href="<?php echo ('https://academics.csun.edu/faculty/'.$ind_email); ?>" target="_blank">Faculty Application</a>.</p>
 								<?php else: ?>
 									<p> Contact information can be found using the campus <a href="https://www.csun.edu/peoplefinder/"target="_blank">directory</a>. </p>
 							<?php endif; ?>
