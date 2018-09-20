@@ -63,7 +63,7 @@ $semester2_pretty = ucwords($semester_no_dash2);
 	<body>
 		<div id="inset-logo">
 			<a href="http://www.csun.edu/">
-				<img id="popup-logo" alt="California State University, Northridge" src="http://www.csun.edu/~catalog/catalog1516/catalog/wp-content/themes/catalogtheme/img/logo-320.png">
+				<img id="popup-logo" alt="California State University, Northridge" src="https://catalog.csun.edu/wp-content/themes/catalogtheme/img/logo-320.png">
 			</a>
 		</div>
 		<?php if(have_posts()): while (have_posts()) : the_post(); ?>
